@@ -1,16 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./styles.css";
-import { useTitle } from "./useTitle";
-import { useClick } from "./useClick";
-import { useConfirm } from "./useConfirm";
-import { usePreventLeave } from "./usePreventLeave";
-import { useBeforeLaevn } from "./useBeforeLaevn";
-
-// useFadeIn
-// opacity
-// useRef()
-
-
+import { useFadeIn } from "./useFadeIn";
 
 // useNetwork
 // onChange
@@ -18,11 +8,19 @@ import { useBeforeLaevn } from "./useBeforeLaevn";
 // handelChange
 // event online / offline
 
-export const App3 = () => {
 
+// useScroll
+
+
+// useFullscreen
+
+export const App3 = () => {
+  const fadeInH1 = useFadeIn(2, 1);
+  const fadeInH2 = useFadeIn(5, 3);
   return (
     <div className="App3">
-        <h1 ref={title}>Hi</h1>
+        <h1 {...fadeInH1}>Hi~ welcome</h1>
+        <h2 {...fadeInH2}> hello world </h2>
     </div>
   );
 };
