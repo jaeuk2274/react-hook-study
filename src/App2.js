@@ -3,8 +3,7 @@ import "./styles.css";
 import { useTitle } from "./useTitle";
 import { useClick } from "./useClick";
 import { useConfirm } from "./useConfirm";
-
-
+import { usePreventLeave } from "./usePreventLeave";
 
 
 export const App2 = () => {
@@ -21,10 +20,16 @@ export const App2 = () => {
   const cancelAction = () => console.log("cancelAction~!!");
   const confirmDelete = useConfirm("Are you sure?", confirmAction, cancelAction);
 
+  //usePreventLeave
+  const {enablePrevent, disablePrevent} = usePreventLeave();
+
   return (
     <div className="App2">
         <h1 ref={title}>Hi</h1>
-        <button onClick={confirmDelete}> confirmDelete </button>
+        <button onClick={confirmDelete}> confirmDelete </button> 
+        <br />
+        <button onClick={enablePrevent}> enablePrevent </button>
+        <button onClick={disablePrevent}> disablePrevent </button>
     </div>
   );
 }
