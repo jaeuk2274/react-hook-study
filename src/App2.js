@@ -4,7 +4,7 @@ import { useTitle } from "./useTitle";
 import { useClick } from "./useClick";
 import { useConfirm } from "./useConfirm";
 import { usePreventLeave } from "./usePreventLeave";
-
+import { useBeforeLaevn } from "./useBeforeLaevn";
 
 export const App2 = () => {
   //useTitle
@@ -23,6 +23,10 @@ export const App2 = () => {
   //usePreventLeave
   const {enablePrevent, disablePrevent} = usePreventLeave();
 
+  //useBeforeLaevn
+  const begForLife = () => console.log("pls dont go");
+  useBeforeLaevn(begForLife);
+  
   return (
     <div className="App2">
         <h1 ref={title}>Hi</h1>
@@ -32,5 +36,6 @@ export const App2 = () => {
         <button onClick={disablePrevent}> disablePrevent </button>
     </div>
   );
-}
+};
+
 
