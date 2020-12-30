@@ -10,6 +10,6 @@ export const useConfirm = (message="", onConfirm, onCancel) => {
     if(typeof onConfirm !== "function"){
       return;
     }
-  
+
     return confirmAction;
-  }
+}

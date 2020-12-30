@@ -7,7 +7,7 @@ export const useBeforeLaevn = (onBefore) => {
         onBefore();
       }
     }
-  // clientY
+
     useEffect(() => {
       document.addEventListener("mouseleave", handle);
       return () => document.removeEventListener("mouseleave", handle);

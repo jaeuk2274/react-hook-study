@@ -17,6 +17,8 @@ export const App4 = () => {
     <div className="App4">
         <button onClick={triggerNotIf}> Notification </button>
         <br />
+        <h1>{data && data.status}</h1>
+        <h1>{loading ? "Loading..." : "End"}</h1>
         <button onClick={refectch}>refetch</button>
     </div>
     

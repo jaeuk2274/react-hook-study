@@ -14,7 +14,6 @@ export const useAxios = (opts, axiosInstance = defaultAxios) => {
         setState({
             ...state,
             loading: true,
-
         });
         setTrigger(Date.now());
     }
