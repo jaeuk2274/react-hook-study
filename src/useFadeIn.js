@@ -1,6 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
-// useFadeIn
 export const useFadeIn = (duraction = 2, delay = 1) => {
     const element = useRef();
   
@@ -13,4 +12,4 @@ export const useFadeIn = (duraction = 2, delay = 1) => {
     })
   
     return {ref: element, style: {opacity:0}};
-  }
+}

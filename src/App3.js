@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./styles.css";
 import { useFadeIn } from "./useFadeIn";
 import { useNetwork } from "./useNetwork";

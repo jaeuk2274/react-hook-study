@@ -11,4 +11,4 @@ export const useTaps = ( initalTap, allTaps ) => {
       currentItem: allTaps[currentIndex],
       changeItem: setCurrentIndex
     };
-  };
+};

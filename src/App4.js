@@ -21,7 +21,6 @@ export const App4 = () => {
         <h1>{loading ? "Loading..." : "End"}</h1>
         <button onClick={refectch}>refetch</button>
     </div>
-    
   );
 };
 
