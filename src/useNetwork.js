@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 export const useNetwork = onChange => {
     const [status, setStatus] = useState(navigator.onLine);

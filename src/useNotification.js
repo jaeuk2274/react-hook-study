@@ -1,5 +1,3 @@
-import React, { useEffect, useRef, useState } from "react";
-
 export const useNotification = (title, option) => {
     if (!("Notification" in window)) {
       alert("This browser does not support desktop notification");
